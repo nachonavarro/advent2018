@@ -8,7 +8,7 @@ def size(node=0):
     else:
         children = list(G.out_edges(node))
         for meta in metadata:
-            if meta - 1< len(children):
+            if meta - 1 < len(children):
                 total += size(children[meta - 1][1])
     return total
 
